@@ -2,38 +2,22 @@
 
 Animated circle loading view, with changing colors.
 
-##### Default Loading View
+##### Default Loading View Example
 ```
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
-        firstColor = [UIColor blueColor];
-        secondColor = [UIColor yellowColor];
-        [self loadView];
-    }
-    return self;
-}
+AnimatedLoadingView *defaultLoadingView = [[AnimatedLoadingView alloc] initWithFrame:self.view.frame];
+[self.view addSubview:defaultLoadingView];
+[defaultLoadingView start];
 ```
 
-##### Customizable Loading View
+##### Customizable Loading View Example
 ```
-- (id)initWithFrame:(CGRect)frame bgColor:(UIColor *)bgColor firstColor:(UIColor *)fColor secondColor:(UIColor *)sColor
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        if (bgColor) backgroundColor = bgColor;
-        else backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
-        
-        if (fColor) firstColor = fColor;
-        else firstColor = [UIColor blueColor];
-        
-        if (sColor) secondColor = sColor;
-        else secondColor = [UIColor yellowColor];
-        
-        [self loadView];
-    }
-    return self;
-}
+AnimatedLoadingView *colorChangeLoadingView = [[AnimatedLoadingView alloc] initWithFrame:self.textView.frame bgColor:[[UIColor blackColor] colorWithAlphaComponent:0.5] firstColor:[UIColor greenColor] secondColor:[UIColor purpleColor]];
+[self.view addSubview:colorChangeLoadingView];
+[colorChangeLoadingView start];
+```
+
+##### Stop Loading
+```
+[defaultLoadingView stop];
+[colorChangeLoadingView stop];
 ```
