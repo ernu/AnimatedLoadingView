@@ -17,10 +17,10 @@ s.license = { :type => "MIT", :file => "LICENSE.md" }
 s.author = { "Ernesto Kim" => "" }
 
 # 5
-s.homepage = "https://github.com/ernu/Animated-Loading-View"
+s.homepage = "https://github.com/ernu/AnimatedLoadingView"
 
 # 6
-s.source = { :git => "https://github.com/ernu/Animated-Loading-View.git", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/ernu/AnimatedLoadingView.git", :tag => "#{s.version}"}
 
 # 7
 s.framework = "UIKit"
