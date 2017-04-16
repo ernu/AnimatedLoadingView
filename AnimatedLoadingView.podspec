@@ -8,7 +8,7 @@ s.summary = "Animated circle loading view, with changing colors."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = "0.0.1"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE.md" }
