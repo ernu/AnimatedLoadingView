@@ -2,6 +2,11 @@
 
 Animated circle loading view, with changing colors.
 
+##### Pod Install
+```
+pod 'AnimatedLoadingView', '0.0.1'
+```
+
 ##### Default Loading View Example
 ```
 AnimatedLoadingView *defaultLoadingView = [[AnimatedLoadingView alloc] initWithFrame:self.view.frame];
